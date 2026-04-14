@@ -5,6 +5,7 @@
 #include <QTextStream>
 #include <QFileDialog>
 #include "secondwindow.h"
+#include <QInputDialog>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
@@ -70,5 +71,28 @@ void MainWindow::on_pushButton_3_clicked()
 
     secondWindow->setData(data);
     secondWindow->show();
+}
+
+
+void MainWindow::on_pushButton_4_clicked()
+
+{
+    bool ok1, ok2;
+
+    QString name = QInputDialog::getText(this, "Добавить", "Название:", QLineEdit::Normal, "", &ok1);
+    double value = QInputDialog::getDouble(this, "Добавить", "Значение:", 0, 0, 100000, 1, &ok2);
+
+    if (!ok1 || !ok2) return;
+
+    ui->listWidget->addItem(name + " " + QString::number(value));
+}
+
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    auto item = ui->listWidget->currentItem();
+    if (!item) return;
+
+    delete item;
 }
 
