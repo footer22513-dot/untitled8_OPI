@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <QMap>
-
+#
 class SecondWindow : public QWidget
 {
     Q_OBJECT

@@ -3,7 +3,7 @@
 #include <QPainter>
 #include <QFile>
 #include <QTextStream>
-
+#
 SecondWindow::SecondWindow(QWidget *parent)
     : QWidget(parent)
 {
