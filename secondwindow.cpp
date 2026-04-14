@@ -52,7 +52,9 @@ void SecondWindow::paintEvent(QPaintEvent *event)
 
     QRectF rect(100, 50, 300, 300); // область круга
 
-    double total = 0;
+    double total;
+
+    total = 0;
     for (auto v : data)
         total += v;
 
