@@ -29,7 +29,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    SecondWindow *secondWindow;  // добавь это
+    SecondWindow *secondWindow;
 };
 
 #endif // MAINWINDOW_H

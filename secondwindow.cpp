@@ -73,7 +73,7 @@ void SecondWindow::paintEvent(QPaintEvent *event)
         painter.setBrush(colors[colorIndex % colors.size()]);
         painter.drawPie(rect, startAngle, spanAngle);
 
-        // ====== ТЕКСТ ======
+
         double angle = (startAngle + spanAngle / 2) / 16.0;
         double rad = angle * M_PI / 180.0;
 
