@@ -94,3 +94,16 @@ void MainWindow::on_pushButton_7_clicked()
     // Alias: add data (same as pushButton_4)
     on_pushButton_4_clicked();
 }
+void MainWindow::on_pushButton_8_clicked()
+{
+    // Open save file dialog
+    QString fileName = QFileDialog::getSaveFileName(this, "Сохранить данные", "", "Текст (*.txt);;Все файлы (*)");
+    if (fileName.isEmpty()) return;
+    QFile file(fileName);
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) return;
+    QTextStream out(&file);
+    for (int i = 0; i < ui->listWidget->count(); ++i) {
+        out << ui->listWidget->item(i)->text() << "\n";
+    }
+    file.close();
+}

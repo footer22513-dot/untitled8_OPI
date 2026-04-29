@@ -25,6 +25,7 @@ private slots:
     void on_pushButton_5_clicked(); // delete
     void on_pushButton_6_clicked(); // refresh diagram
     void on_pushButton_7_clicked(); // add entry
+    void on_pushButton_8_clicked(); // save data
 
 private:
     Ui::MainWindow *ui;
