@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Главное окно</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">
@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Load</string>
+     <string>Загрузить</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
@@ -37,7 +37,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Diagramma</string>
+     <string>Построить диаграмму</string>
     </property>
    </widget>
    <widget class="QListWidget" name="listWidget">
@@ -60,7 +60,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Update</string>
+     <string>Обновить</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
@@ -73,7 +73,33 @@
      </rect>
     </property>
     <property name="text">
-     <string>Delete</string>
+     <string>Удалить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Обновить диаграмму</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить</string>
     </property>
    </widget>
   </widget>

@@ -20,12 +20,11 @@ public:
 
 private slots:
     void on_pushButton_clicked();  // уже есть — отлично
-
     void on_pushButton_3_clicked();
-
-    void on_pushButton_4_clicked();
-
-    void on_pushButton_5_clicked();
+    void on_pushButton_4_clicked(); // add data
+    void on_pushButton_5_clicked(); // delete
+    void on_pushButton_6_clicked(); // refresh diagram
+    void on_pushButton_7_clicked(); // add entry
 
 private:
     Ui::MainWindow *ui;
